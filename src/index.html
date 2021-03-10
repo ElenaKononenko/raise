@@ -4,73 +4,289 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>test</title>
   </head>
 
   <body>
     <header>
-      <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
-      <img src="./images/burger.svg" alt="menu" />
+      <div class="container header">
+      <a class="header__logo" href="./index.html"><img src="./images/logo.svg" alt="logo" /></a>
+      <img class="header__logo__image" src="./images/burger.svg" alt="menu" /></div>
     </header>
-    <section class="1">
-      <h1>111111</h1>
-      <div>
-        <ul>
-          <li>
-            <div>
-              <h3>
-                At vero eos et accusamus et iusto odio dignissimos ducimus
-              </h3>
-              <p>
-                Nam libero tempore, cum soluta nobis est eligendi optio, cumque
-                nihil impedit, quo minus id, quod maxime placeat, facere
-                possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-                Temporibus autem quibusdam et aut officiis debitis aut rerum
-                necessitatibus saepe eveniet, ut et voluptates repudiandae sint
-                et molestiae non recusandae.
-              </p>
-              <button type="button">Try for free</button>
-            </div>
-            <div><img src="./images/iMac.png" alt="iMac" width="400" /></div>
-          </li>
-          <li>
-            <div>
-              <h3>Temporibus autem quibusdam et aut officiis debitis</h3>
-              <p>
-                At vero eos et accusamus et iusto odio dignissimos ducimus, qui
-                blanditiis praesentium voluptatum deleniti atque corrupti, quos
-                dolores et quas molestias excepturi sint, obcaecati cupiditate
-                non provident, similique sunt in culpa, qui officia deserunt
-                mollitia animi, id est laborum et dolorum fuga.
-              </p>
-              <button type="button">Try for free</button>
-            </div>
-            <div><img src="./images/iMac.png" alt="iMac" width="400" /></div>
-          </li>
-        </ul>
-        <div class="notice">
-          <h4>Notice</h4>
-          <p>
-            Nam libero tempore, cum soluta nobis est eligendi optio, cumque
-            nihil impedit, quo minus id, quod maxime placeat, facere possimus,
-            omnis voluptas assumenda est.
-          </p>
+<main>
+  <section class="product">
+    <div class="container aa">
+   <h1 class="product__title visually_hidden">product</h1>
+  
+     <ul class="product__list">
+       <li class="product__list__item">
+         <div>
+           <h3 class="product__list__title">
+             At vero eos et accusamus et iusto odio dignissimos ducimus
+           </h3>
+           <p class="product__list__description">
+             Nam libero tempore, cum soluta nobis est eligendi optio, cumque
+             nihil impedit, quo minus id, quod maxime placeat, facere
+             possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+             Temporibus autem quibusdam et aut officiis debitis aut rerum
+             necessitatibus saepe eveniet, ut et voluptates repudiandae sint
+             et molestiae non recusandae.
+           </p>
+           <button class="product__list__btn btn " type="button">Try for free</button>
+         </div>
+         <div ><img class="product__list__picture" src="./images/iMac.png" alt="iMac" width="400" /></div>
+       </li>
+       <li class="product__list__item">
+         <div>
+           <h3 class="product__list__title">Temporibus autem quibusdam et aut officiis debitis</h3>
+           <p class="product__list__description">
+             At vero eos et accusamus et iusto odio dignissimos ducimus, qui
+             blanditiis praesentium voluptatum deleniti atque corrupti, quos
+             dolores et quas molestias excepturi sint, obcaecati cupiditate
+             non provident, similique sunt in culpa, qui officia deserunt
+             mollitia animi, id est laborum et dolorum fuga.
+           </p>
+           <button type="button" class="product__list__btn_secondary btn">Try for free</button>
+         </div>
+         <div><img class="product__list__picture" src="./images/iMac.png" alt="iMac" width="400" /></div>
+       </li>
+     </ul>
+     <div class="product notice ">
+       <h4 class="notice__title">Notice</h4>
+       <p class="description">
+         Nam libero tempore, cum soluta nobis est eligendi optio, cumque
+         nihil impedit, quo minus id, quod maxime placeat, facere possimus,
+         omnis voluptas assumenda est.
+       </p>
+     </div>
+   </div>
+ </div>
+ </section>
+ <section class="calc">
+   <div class="container">
+     <form class="calculator">
+       <h2 class="calculator__title">Calculator</h2>
+       <p class="calculator__description">Nam libero tempore, cum soluta nobis est eligendi optio</p>
+       <select class="calculator__input calculator__input_colors"  name="colors" >
+        <div >
+        <option selected class="calculator__input__options">Colors</option>
+        <option class="calculator__input__options">red</option>
+        <option class="calculator__input__options">green</option>
+        <option class="calculator__input__options">blue</option>
+        <option class="calculator__input__options">orange</option>
         </div>
+       </select>
+
+       <select class="calculator__input calculator__input_size"   name="size"> 
+        <option selected class="calculator__input__options">Size</option>
+        <option class="calculator__input__options">100%</option>
+        <option class="calculator__input__options">150%</option>
+        <option class="calculator__input__options">200%</option>
+      </select>
+
+       <!-- <input class="calculator__input calculator__input_number" type="range" /> -->
+
+<div class="calculator__wrappler__input_number">        
+    <button class="bt_minus">
+        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+    </button>
+    <input type="text" value="100" size="2" class="calculator__input_number" data-max-count="20" />
+    <button class="bt_plus">
+        <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+    </button>
+</div>
+       <input class="calculator__input calculator__input_date"  type="text" id="datepicker"  />
+
+       <select class="calculator__input calculator__input_city"  > 
+        <option selected class="calculator__input__options">City</option>
+        <option class="calculator__input__options">Kyiv</option>     
+        <option class="calculator__input__options">Odessa</option>
+        <option class="calculator__input__options">Rivne</option>
+        <option class="calculator__input__options">Lviv</option>
+      </select>
+       <select class="calculator__input calculator__input_delivery" > 
+          <option selected class="calculator__input__options">Delivery</option>
+          <option class="calculator__input__options">New Post</option>
+          <option class="calculator__input__options">Ukrposhta</option>
+          <option class="calculator__input__options">Pickup</option>
+      </select>
+       <p class="calculator__total">56.25$</p>
+       <button class="calculator_button btn"type="submit">Anfragen</button>
+     </form>
+   </div>
+ </section>
+ <section class="slider">
+   <div class="container">
+
+<h2 class="slider__title">How it works</h2>
+<p class="slider__description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<ul class="slider__list list">
+  <li class="slider__item"><div class="slider__item_position">1</div></li>
+  <li class="slider__item"><div class="slider__item_position">2</div></li>
+  <li class="slider__item"><div class="slider__item_position">3</div></li>
+  <li class="slider__item"><div class="slider__item_position">4</div></li>
+</ul>
+
+   </div></section>
+ <section class="carusel">
+   <div class="container"><h2>Reviews</h2></div>
+ </section>
+ <section class="slider2"><div class="container"></div></section>
+ <section class="6">
+   <div class="container">
+     <ul>
+       <li>
+         <img src="./images/headphones.png" alt="headphones" />
+         <h3>At vero eos et accusamus</h3>
+         <ul>
+           <li>
+             <p>Sed ut perspiciatis, unde omnis iste natus error.</p>
+           </li>
+           <li>
+             <p>
+               Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut
+               odit aut fugit, sed quia consequuntur magni dolores eos, qui
+               ratione voluptatem sequi nesciunt.
+             </p>
+           </li>
+           <li>
+             <p>
+               Dsed quia non numquam eius modi tempora inci[di]dunt, ut
+               labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
+               minima veniam.
+             </p>
+           </li>
+           <li><p>Quam nihil molestiae consequatur.</p></li>
+           <li>
+             <p>
+               At vero eos et accusamus et iusto odio dignissimos ducimus.
+             </p>
+           </li>
+         </ul>
+       </li>
+       <li>
+         <div>
+           <img src="./images/folder.png" alt="folder" />
+           <h3>Temporibus autem quibusdam et aut officiis debitis</h3>
+           <p>
+             At vero eos et accusamus et iusto odio dignissimos ducimus, qui
+             blanditiis praesentium voluptatum deleniti atque corrupti, quos
+             dolores et quas molestias excepturi sint, obcaecati cupiditate
+             non provident, similique sunt in culpa, qui officia deserunt
+             mollitia animi, id est laborum et dolorum fuga. Et harum quidem
+             rerum facilis est et expedita distinctio. Nam libero tempore,
+             cum soluta nobis est eligendi optio, cumque nihil impedit, quo
+             minus id, quod maxime placeat, facere possimus, omnis voluptas
+             assumenda est.
+           </p>
+         </div>
+       </li>
+       <li>
+         <div>
+           <h4>Notice:</h4>
+           <p>
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco
+             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+             dolor in reprehenderit in voluptate velit esse cillum dolore eu
+             fugiat nulla pariatur.
+           </p>
+         </div>
+         <p>
+           Et harum quidem rerum facilis est et expedita distinctio. Nam
+           libero tempore, cum soluta nobis est eligendi optio, cumque nihil
+           impedit, quo minus id, quod maxime placeat, facere possimus, omnis
+           voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+           quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+           eveniet, ut et voluptates repudiandae sint et molestiae non
+           recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut
+           aut reiciendis voluptatibus.
+         </p>
+       </li>
+     </ul>
+   </div>
+ </section>
+ <section>
+   <div class="container">
+     <h2>FAQ</h2>
+     <ul>
+       <li>
+         <h4>At vero eos et accusamus et iustosds odio?</h4>
+         <p>
+           Temporibus autem quibusdam et aut officiis debitis aut rerum
+           necessitatibus saepe eveniet, ut et voluptates repudiandae sint et
+           molestiae non recusandae.
+         </p>
+       </li>
+       <li>
+         <h4>Was gehört in eine Facharbeit?</h4>
+         <p>
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
+           explicabo illum, aliquam a mollitia incidunt illo maiores quo
+           repellat voluptates dolor, recusandae voluptatum beatae sunt amet
+           adipisci at ex eligendi?
+         </p>
+       </li>
+       <li>
+         <h4>Wie lange braucht man, um eine Facharbeit zu schreiben?</h4>
+         <p>
+           Diese Frage kann nicht pauschal beantwortet werden, da sich sowohl
+           Deine Motivation als auch Deine Erfahrung bzw. Dein Wissen
+           bezüglich der Facharbeit auf den Arbeitsprozess auswirken. Derweil
+           arbeiten unsere Autoren höchst effizient und liefern Deine
+           wissenschaftliche Arbeit in möglichst kurzer Zeit.
+         </p>
+       </li>
+     </ul>
+     <button class="btn"type="button">Try for free</button>
+   </div>
+ </section>
+</main>
+    <footer>
+      <div class="container">
+        <div>
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href=""></a>Product</li>
+            <li><a href=""></a>FAQ</li>
+            <li><a href=""></a>Contact</li>
+            <li><a href=""></a>Blog</li>
+            <li><a href=""></a>How it works</li>
+            <li><a href=""></a>Clients</li>
+            <li><a href=""></a>Reviews</li>
+          </ul>
+        </div>
+        <div>
+          <a href="#">+49(621) 53399112</a>
+          <p>Call us!</p>
+          <img src="#" alt="stars" />
+          <button class="btn"type="button">Info</button>
+        </div>
+        <div>
+          <ul class="link">
+            <li><a href="">f</a></li>
+            <li><a href="">i</a></li>
+            <li><a href="">y</a></li>
+            <li><a href="">p</a></li>
+          </ul>
+          <ul>
+            <img src="#" alt="" />
+            <img src="#" alt="" />
+          </ul>
+          <ul>
+            <li>
+              <p>DMCA</p>
+            </li>
+            <li>
+              <p>PROTECTED</p>
+            </li>
+          </ul>
+        </div>
+        <p>copy</p>
       </div>
-    </section>
-    <section class="calc">
-      <form action="">
-        <h2>Calculator</h2>
-        <p>Nam libero tempore, cum soluta nobis est eligendi optio</p>
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <p>56.25$</p>
-        <button type="submit">Anfragen</button>
-      </form>
-    </section>
+    </footer>
+   
   </body>
 </html>

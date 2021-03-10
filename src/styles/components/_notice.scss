@@ -1,0 +1,25 @@
+.notice {
+  padding: 19px 30px;
+}
+.notice__title {
+  display: flex;
+  align-items: center;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  margin-bottom: 10px;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    background-image: url('./images/cardIcon.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: $secondary-accent-color;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}

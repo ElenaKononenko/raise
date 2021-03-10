@@ -49,8 +49,11 @@
     "webpackbar": "^4.0.0"
   },
   "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-scss": "^4.6.0",
     "core-js": "^3.6.5",
     "handlebars": "^4.7.6",
-    "modern-normalize": "^1.0.0"
+    "modern-normalize": "^1.0.0",
+    "pikaday": "^1.8.2"
   }
 }
