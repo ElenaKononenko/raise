@@ -3,9 +3,15 @@ import './styles.scss';
 import 'pikaday/css/pikaday.css';
 import Pikaday from 'pikaday';
 
+import bootstrap from 'bootstrap';
+
+// import accordeon from 'bootstrap/accordeon';
+// console.log(accordeon);
+
 var picker = new Pikaday({
   field: document.getElementById('datepicker'),
   format: 'D/M/YYYY',
+  theme: 'color:red',
   toString(date, format) {
     // you should do formatting based on the passed format,
     // but we will just return 'D/M/YYYY' for simplicity

@@ -1,4 +1,4 @@
-// @import '../node_modules/bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/bootstrap';
 @import './styles/variables/variables';
 @import './styles/base/base.scss';
 @import './styles/components/notice';
@@ -7,3 +7,6 @@
 @import './styles/layot/product';
 @import './styles/layot/calculator';
 @import './styles/layot/slider';
+@import './styles/layot/carusel';
+
+@import './styles/layot/faq';

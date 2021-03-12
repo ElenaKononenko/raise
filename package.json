@@ -49,11 +49,12 @@
     "webpackbar": "^4.0.0"
   },
   "dependencies": {
-    "bootstrap": "^4.6.0",
-    "bootstrap-scss": "^4.6.0",
+    "@popperjs/core": "^2.9.1",
+    "bootstrap": "^5.0.0-beta2",
     "core-js": "^3.6.5",
     "handlebars": "^4.7.6",
     "modern-normalize": "^1.0.0",
+    "owl.carousel": "^2.3.4",
     "pikaday": "^1.8.2"
   }
 }

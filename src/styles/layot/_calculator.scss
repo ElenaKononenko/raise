@@ -13,7 +13,7 @@
   color: $title-text-color;
   border-radius: 10px;
   margin-bottom: 15px;
-
+  text-align: center;
   background-color: #f9fafc;
 
   border: none;
@@ -73,6 +73,12 @@
 }
 
 .calculator__total {
+  color: $accent-color;
+  font-family: Epilogue;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
   text-align: center;
   margin-bottom: 25px;
 }
