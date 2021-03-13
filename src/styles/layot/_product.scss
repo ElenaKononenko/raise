@@ -13,3 +13,14 @@
 .product__list__btn_secondary {
   width: 180px;
 }
+.product__list__btn_secondary {
+  margin-bottom: 19px;
+}
+.product__list__item__positionNotice {
+  position: relative;
+}
+.product.notice {
+  position: absolute;
+  top: 62%;
+  background-color: white;
+}

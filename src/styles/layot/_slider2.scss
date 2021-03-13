@@ -1,0 +1,23 @@
+.slider2__title {
+  margin-bottom: 10px;
+}
+.slider2__images {
+  margin-bottom: 20px;
+}
+.slider2__list {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  height: 34px;
+  white-space: nowrap;
+}
+.slider2__list__item {
+  margin-right: 15px;
+  &:hover {
+    color: $accent-color;
+  }
+}
+.slider2__list__hidden {
+  margin-bottom: 50px;
+}

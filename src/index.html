@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="sectionHeader">
       <div class="container header">
       <a class="header__logo" href="./index.html"><img src="./images/logo.svg" alt="logo" /></a>
       <img class="header__logo__image" src="./images/burger.svg" alt="menu" /></div>
@@ -20,7 +20,7 @@
     <div class="container aa">
    <h1 class="product__title visually_hidden">product</h1>
   
-     <ul class="product__list">
+     <ul class="product__list list">
        <li class="product__list__item">
          <div>
            <h3 class="product__list__title">
@@ -50,17 +50,19 @@
            </p>
            <button type="button" class="product__list__btn_secondary btn">Try for free</button>
          </div>
-         <div><img class="product__list__picture" src="./images/iMac.png" alt="iMac" width="400" /></div>
+         <div class="product__list__item__positionNotice"><img class="product__list__picture" src="./images/requirements.png" alt="iMac" width="400" />
+          <div class="product notice ">
+            <h4 class="notice__title">Notice</h4>
+            <p class="description">
+              Nam libero tempore, cum soluta nobis est eligendi optio, cumque
+              nihil impedit, quo minus id, quod maxime placeat, facere possimus,
+              omnis voluptas assumenda est.
+            </p>
+          </div>
+        </div>
        </li>
      </ul>
-     <div class="product notice ">
-       <h4 class="notice__title">Notice</h4>
-       <p class="description">
-         Nam libero tempore, cum soluta nobis est eligendi optio, cumque
-         nihil impedit, quo minus id, quod maxime placeat, facere possimus,
-         omnis voluptas assumenda est.
-       </p>
-     </div>
+  
    </div>
  </div>
  </section>
@@ -178,50 +180,108 @@
 
   </div>
   
+  <div class="carusel__card">
+    <p class="carusel__card__starts">5.0</p>
+    <p class="carusel__card__review">Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam.</p>
+
+    <p>ID:21015</p>
+    <p>Category<span>|</span>Subcategory</p>
+
+  </div>
   
+  <div class="carusel__card">
+    <p class="carusel__card__starts">5.0</p>
+    <p class="carusel__card__review">Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam.</p>
+
+    <p>ID:21015</p>
+    <p>Category<span>|</span>Subcategory</p>
+
+  </div>
   
-  
-  
+  <button type="button" class="carusel__btn">Read more</button>
+  <ul class="carusel__points list">
+    <li class="carusel__points__item"></li>
+    <li class="carusel__points__item"></li>
+    <li class="carusel__points__item"></li>
+    <li class="carusel__points__item"></li>
+  </ul>
   
   </div>
  </section>
- <section class="slider2"><div class="container"></div></section>
- <section class="6">
-   <div class="container">
-     <ul>
-       <li>
-         <img src="./images/headphones.png" alt="headphones" />
-         <h3>At vero eos et accusamus</h3>
-         <ul>
-           <li>
-             <p>Sed ut perspiciatis, unde omnis iste natus error.</p>
+ <section class="slider2"><div class="container">
+<div>
+    <div>
+      <h2 class="slider2__title">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit</h2>
+      <p class="slider2__description">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. </p>
+    </div>
+    <div>
+      <img class="slider2__images" src="./images/specialist.png" alt="specialist">
+    </div>
+
+</div>
+<div>
+  <ul class="slider2__list list">
+    <li class="slider2__list__item">
+        <p>Temporibus autem</p>
+    </li>
+    <li class="slider2__list__item">
+        <p>Nam libero</p>
+    </li>
+    <li class="slider2__list__item">
+        <p>Et harum</p>
+    </li>
+  </ul>
+  <ul class="slider2__list__hidden list">
+   <li>
+    <p>At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa,</p>
+   </li>
+   <li>
+    <p class="visually_hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, molestiae reprehenderit facere dolore culpa cum, assumenda incidunt ut eveniet voluptatum pariatur nulla maiores atque optio. Provident, sapiente autem? Distinctio, excepturi?</p>
+  </li>
+  <li>
+    <p class="visually_hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui laborum in quasi facere odio aliquam commodi quod incidunt excepturi explicabo iure dolore  </p>
+  </li>
+  </ul>
+</div>
+
+ </div></section>
+ <section class="examples">
+   <div class=" container">
+     <ul  class=" examples__list list">
+       <li class="examples__list__item">
+         <img class="examples__list__images" src="./images/headphones.png" alt="headphones" />
+         <h3 class="examples__list__title">At vero eos et accusamus</h3>
+         <ul class="examples__list__description list">
+           <li class="examples__list__description__item">
+            <span> Sed ut perspiciatis, unde omnis iste natus error.</span>
            </li>
-           <li>
-             <p>
+           <li class="examples__list__description__item">
+             <span class="examples__list__description__item__text">
                Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut
                odit aut fugit, sed quia consequuntur magni dolores eos, qui
                ratione voluptatem sequi nesciunt.
-             </p>
+             </span>
            </li>
-           <li>
-             <p>
+           <li class="examples__list__description__item">
+             <span>
                Dsed quia non numquam eius modi tempora inci[di]dunt, ut
                labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
                minima veniam.
-             </p>
+             </span>
            </li>
-           <li><p>Quam nihil molestiae consequatur.</p></li>
-           <li>
-             <p>
+           <li class="examples__list__description__item"><span>Quam nihil molestiae consequatur.</span>
+          </li>
+           <li class="examples__list__description__item">
+             <span>
                At vero eos et accusamus et iusto odio dignissimos ducimus.
-             </p>
+             </span>
            </li>
          </ul>
        </li>
-       <li>
+       <li class="examples__list__item">
          <div>
-           <img src="./images/folder.png" alt="folder" />
-           <h3>Temporibus autem quibusdam et aut officiis debitis</h3>
+           <img class="examples__list__images" src="./images/folder.png" alt="folder" />
+           <h3 class="examples__list__title">Temporibus autem quibusdam et aut officiis debitis</h3>
            <p>
              At vero eos et accusamus et iusto odio dignissimos ducimus, qui
              blanditiis praesentium voluptatum deleniti atque corrupti, quos
@@ -235,9 +295,10 @@
            </p>
          </div>
        </li>
-       <li>
-         <div>
-           <h4>Notice:</h4>
+      </ul>
+       
+         <div class="notice examples__notice">
+           <h4  class="notice__title">Notice:</h4>
            <p>
              Ut enim ad minim veniam, quis nostrud exercitation ullamco
              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -255,8 +316,8 @@
            recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut
            aut reiciendis voluptatibus.
          </p>
-       </li>
-     </ul>
+      
+     
    </div>
  </section>
  <section class="faq">
@@ -336,53 +397,82 @@
          </div>
        </div>
      </div> -->
-     <button class="btn"type="button">Try for free</button>
+     <button class="faq__btn btn"type="button">Try for free</button>
    </div>
  </section>
 </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <div>
-          <ul>
-            <li><a href="">About</a></li>
-            <li><a href=""></a>Product</li>
-            <li><a href=""></a>FAQ</li>
-            <li><a href=""></a>Contact</li>
-            <li><a href=""></a>Blog</li>
-            <li><a href=""></a>How it works</li>
-            <li><a href=""></a>Clients</li>
-            <li><a href=""></a>Reviews</li>
-          </ul>
-        </div>
-        <div>
-          <a href="#">+49(621) 53399112</a>
-          <p>Call us!</p>
-          <img src="#" alt="stars" />
-          <button class="btn"type="button">Info</button>
-        </div>
-        <div>
-          <ul class="link">
-            <li><a href="">f</a></li>
-            <li><a href="">i</a></li>
-            <li><a href="">y</a></li>
-            <li><a href="">p</a></li>
-          </ul>
-          <ul>
-            <img src="#" alt="" />
-            <img src="#" alt="" />
-          </ul>
-          <ul>
-            <li>
-              <p>DMCA</p>
+        <div >
+          <ul class="footer__nav list">
+            <li class="footer__nav__item">
+              <p><a class="footer__nav__item__link" href="">About</a></p>
+              <p><a class="footer__nav__item__link" href="">Product</a></p>
+              <p><a class="footer__nav__item__link" href="">FAQ</a></p>
+              <p><a class="footer__nav__item__link" href="">Contact</a></p>
             </li>
-            <li>
-              <p>PROTECTED</p>
-            </li>
+            <li class="footer__nav__item">
+                <p><a class="footer__nav__item__link" href="">Blog</a></p>
+                <p><a class="footer__nav__item__link" href="">How it works</a></p>
+                <p><a class="footer__nav__item__link" href="">Clients</a></p>
+                <p><a class="footer__nav__item__link" href="">Reviews</a></p>
+              </li>
           </ul>
         </div>
-        <p>copy</p>
+        <div class="footer__info">
+          <a class="footer__nav__item__link" href="#">+49(621) 53399112</a>
+          <p class="footer__info__tel" >Call us!</p>
+     <div class="footer__info__stars_wrappler">
+      <ul class="footer__info__stars list">
+        <li class="footer__info__stars__item"> <img src="./images/star.svg" alt="stars" width="16" height="16" /></li>
+        <li class="footer__info__stars__item"> <img src="./images/star.svg" alt="stars" width="16" height="16" /></li>
+        <li class="footer__info__stars__item"> <img src="./images/star.svg" alt="stars" width="16" height="16" /></li>
+        <li class="footer__info__stars__item"> <img src="./images/star.svg" alt="stars" width="16" height="16" /></li>
+        <li class="footer__info__stars__item"> <img src="./images/star.svg" alt="stars" width="16" height="16" /></li>
+      </ul>
+       <span class="footer__info__stars__reit">4,5/5</span>
+     </div>
+          <button class="footer__info__btn"type="button">Info</button>
+        </div>
+
+        <div class="social">
+          <ul class="footer__social list">
+            <li class="footer__social__item footer__social__item_facebook">
+              <a class=" link" href="" aria-label="Ссылка на Facebook" 
+                ></a>
+            </li>
+            <li class="footer__social__item footer__social__item_instagram">
+              <a class=" link" href="" aria-label="Ссылка на Instagram">
+              </a>
+            </li>
+            <li class=" footer__social__item footer__social__item_youtube">   <a class=" link" href="" aria-label="Ссылка на Youtube">
+            </a></li>
+            <li class=" footer__social__item footer__social__item_pinterest">   <a class=" link" href="" aria-label="Ссылка на Pinterest">
+            </a></li>
+          </ul>
+
+          <ul class="footer__payment list">
+            <li class="footer__payment__item">    
+              <svg  width='41';
+              height= '32';>
+                <use href="./images/symbol-defs.svg#icon-visa"></use>
+              </svg>
+            </li>
+            <li class="footer__payment__item">
+              <svg  width='48';
+              height= '32';>
+                <use href="./images/symbol-defs.svg#icon-mastercard"></use>
+              </svg>
+            </li>
+              
+          </ul>
+              <p class="footer__protected" >DMCA<span class="footer__protected__excretion">PROTECTED</span></p>
+        </div>
+        <p class="copyright">&copy; Copyright 2016-2020 </p>
       </div>
+        
+      
     </footer>
-   
+    
   </body>
 </html>

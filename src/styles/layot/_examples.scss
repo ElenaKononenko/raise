@@ -1,0 +1,31 @@
+.examples__list__images {
+  margin-bottom: 20px;
+}
+.examples__list__title {
+  margin-bottom: 40px;
+}
+.examples__list__item:not(:last-child) {
+  margin-bottom: 88px;
+}
+// .examples__list {
+//   margin-bottom: 88px;
+// }
+.examples__list__description__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 11.92px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $title-text-color;
+    margin-right: 18px;
+  }
+}
+.examples__notice {
+  margin-top: 65px;
+  margin-bottom: 30px;
+}

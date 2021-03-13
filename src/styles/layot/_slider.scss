@@ -52,9 +52,9 @@
 .sliderList {
   display: inline-flex;
   flex-wrap: nowrap;
-  overflow-x: scroll;
+  overflow-x: auto;
   width: 100%;
-  height: 34px;
+  height: 40px;
   white-space: nowrap;
 }
 .sliderList__item {
